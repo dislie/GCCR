@@ -1,0 +1,46 @@
+##DATA:
+# Dataset name
+dataset: 'CUB200'
+# Directory path to dataset
+data_path: '/data/yhx/data/CUB_200_2011'
+# INPUT IMAGE DIMENSIONS
+image_size: [224, 224]
+
+num_workers: 4
+
+num_classes: 200
+txt_dir: ./data/cub/
+
+##MODEL:
+model_arch: 'swin-base-224'
+batch_size: 20
+output_dir: './save'
+resume: ''
+backbone: 'vit'
+
+use_amp: True
+
+log_step: 50
+
+pretrain_path: '/data/yhx/pretrain_model/swin/swin_base_patch4_window7_224_22kto1k.pth'
+
+# Dropout rate
+drop_rate : 0.2
+  
+##TRAIN:
+warmup_epochs: 10
+epochs: 100
+
+backbone_lr: 1e-5
+others_lr: 5e-5
+
+betas: [0.9, 0.999]
+weight_decay: 0.01
+
+#pruning_loc: [2,2,6,2]
+#keep_rate: [0.9,0.9,0.5,0.5]
+pruning_loc: [0,0,6,0]
+keep_rate: [1,1,0.5,1]
+
+
+
