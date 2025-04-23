@@ -14,7 +14,11 @@ thop==0.1.1
 ```
 
 ## training
+```txt
 python ./train.py --name swin-base-224- --config ./configs/CUB200.yaml --sample_classes 2 --sample_images 10 --img_size 224 --gpus 0
+```
 
 ## testing
+```txt
 python ./train.py --name swin-base-224- --config ./configs/CUB200.yaml --sample_classes 2 --sample_images 10 --img_size 224 --gpus 0 --val_dir /model.pth
+```
