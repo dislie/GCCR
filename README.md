@@ -9,6 +9,7 @@ This is the list of the package versions required for our experiments.
 ```txt
 python==3.10.14
 pytorch==2.4.0
+timm==1.0.9
 omegaconf==2.3.0
 thop==0.1.1
 ```
