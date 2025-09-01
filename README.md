@@ -1,6 +1,6 @@
 # GCCR
 
-The official implementation of the paper "Graph-guided Cross-image Correlation Learning for Fine-grained Visual Representation".
+The official implementation of the paper "Graph-guided Cross-image Correlation Learning with Adaptive Global-local Feature Fusion for Fine-grained Visual Representation".
 
 ## Dependencies
 
