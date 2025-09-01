@@ -23,3 +23,6 @@ python ./train.py --name swin-base-224- --config ./configs/CUB200.yaml --sample_
 ```txt
 python ./train.py --name swin-base-224- --config ./configs/CUB200.yaml --sample_classes 2 --sample_images 10 --img_size 224 --gpus 0 --val_dir /model.pth
 ```
+
+## models
+Model parameters are available on Releases.
